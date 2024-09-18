@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    
+}
+.main {
+    background-image: url("assest/Images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw; /* Ensures full viewport width */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+    overflow: hidden; /* Prevents content overflow */
+    margin: 0; /* Ensures no margin that might cause scrolling */
+    padding: 0;
+}
+
+
+.main .box {
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    /* z-index: 1; */
+}
+
+nav {
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 62px;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    /* height: 100vh; */
+    position: relative;
+    gap: 20px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    line-height: 70px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    display: flex;
+    gap: 6px;
+    /* margin-bottom: 20px; */
+}
+
+.hero input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 43px;
+    width: 300px;
+    /* position: relative;
+    bottom: 5px; */
+    opacity: 0.4;
+    background-color: azure;
+}
+
+.enter button {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    height: 50px;
+    width: 210px;
+    border-radius: 6px;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.separator {
+    border: 2.5px solid rgb(38, 36, 36);
+}
+
+.top {
+    position: relative;
+    top: 20px;
+    padding: 25px;
+    width: 80vw;
+    margin: auto;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56vh auto;
+    height: auto;
+    width: 80vw;
+    margin: auto;
+    color: white;
+}
+
+.content .reason {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 0.95fr; */
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.reason_box {
+    background-color: #1c1a35;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Martel Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:0.6rem;
+    padding: 1.3rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    gap: 0.8rem;
+    box-sizing: border-box;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.question .question_box {
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem;
+    align-items: center;
+    box-sizing: border-box;
+    height: 80px;
+    transition: all 1s ease-out;
+}
+
+.question .question_box:hover {
+
+    background-color: #5a5959;
+}
+
+.question_ask {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 55px;
+}
+
+.question .question_box span {
+    font-size: 1.6em;
+    box-sizing: border-box;
+}
+
+.sign {
+    height: fit-content;
+    width: 70vw;
+    margin: 3.6rem auto 1.8rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.sign .header {
+    font-size: 16px;
+   text-align: center;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.sign .login {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 8px;
+    height: 54px;
+}
+
+.sign .login input {
+    width: 80%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: rgb(15,14,14);
+    border: 1px solid #ccc; /* Light border for contrast */
+    padding: 10px;
+    color: #fff; /* Text color */
+}
+.sign .login input:hover::placeholder {
+    color: #888; /* Placeholder color */
+    transform: translateY(-4px); /* Moves the placeholder slightly up */
+    font-size: 14px; /* Adjust the placeholder size */
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+
+
+.sign .login .btn {
+    width: 20%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 6px;
+
+}
+
+footer {
+    height: 80vh;
+    max-width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    color: white;
+}
+
+footer .top a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .top {
+    grid-row: 1/2;
+    padding: 0%;
+}
+
+footer .links {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .bottom {
+    position: relative;
+    top: 20px;
+    box-sizing: border-box;
+    grid-row: 3/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.links ul li {
+    text-decoration: underline;
+    list-style-type: none;
+    padding: 7px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 720px) {
+    .main {
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    .main .box {
+        height: 100vh;
+        z-index: 9;
+    }
+    .content .reason {
+        grid-row: 1/2;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .reason_box {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: normal;
+        padding: 10px;
+    }
+
+    .top {
+        position: relative;
+        top: 20px;
+        padding: 25px;
+        width: 80vw;
+        margin: auto;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        font-family: "Martel Sans", sans-serif;
+    }
+
+    .hero {
+        margin-top: 62px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 10;
+    }
+    .hero> :first-child {
+        font-weight: 700;
+        line-height: 40px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(3) {
+        width: 80%;
+        font-weight: 400;
+        line-height: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        /* margin-bottom: 20px; */
+    }
+
+    .hero input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        height: 43px;
+        width: 80vw;
+        /* position: relative;
+    bottom: 5px; */
+        opacity: 0.4;
+        background-color: azure;
+    }
+
+    .hero .enter .btn {
+        margin: auto;
+        
+    }
+    .sign .login {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        gap: 8px;
+        height: 54px;
+    }
+    
+    .sign .login input {
+        width: 60%;
+    }
+    .sign .login .btn {
+        width: 40%;
+    }
+    nav {
+        max-width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        height: 62px;
+        position: relative;
+        top: 20px;
+    }
+}
